@@ -1,0 +1,17 @@
+{
+    "name": "anho/silex-skeleton",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "1.0.*@dev",
+        "symfony/twig-bridge": "~2.2",
+        "symfony/monolog-bridge": "~2.2"
+    },
+    "require-dev": {
+        "silex/web-profiler": "~1.0"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}
