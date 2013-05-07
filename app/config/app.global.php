@@ -31,6 +31,7 @@ $app->error(function (\Exception $e, $code) use ($app) {
     }
 
     $page = 404 == $code ? '404' : '500';
+    $page = 'errors/'. $page . '.twig';
 
-    return new Response($app['twig']->render('errors/'. $page . '.twig', array('code' => $code)), $code);
+    return new Response($app['twig']->render($page, array('code' => $code)), $code);
 });
